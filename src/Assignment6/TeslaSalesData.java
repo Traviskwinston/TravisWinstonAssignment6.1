@@ -1,10 +1,7 @@
 package Assignment6;
 
-import java.text.NumberFormat;
-import java.text.SimpleDateFormat;
 import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 
 public class TeslaSalesData {
 	
@@ -29,10 +26,4 @@ public class TeslaSalesData {
 	public void setSales(Integer sales) {
 		this.sales = sales;
 	}
-
-//	@Override
-//	public String toString() {
-//		return String.parseString(date);
-//	}
-
 }
