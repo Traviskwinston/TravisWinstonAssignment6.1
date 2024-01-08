@@ -22,7 +22,8 @@ public class YearlySalesReport {
 		FileService fileService = new FileService();
 		NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance();
 		ArrayList<TeslaSalesData> fileData = fileService.addInfoFromFile(fileName);
-		
+		//I could just do a for Loop for 2016 to 2020, but I like the practice making
+		//the list more dynamic in case it covers a wider or narrower span of years.
 		int minYear = fileData.stream()
 	            			  .mapToInt(data -> data.getDate()
 	            					  				.getYear())
